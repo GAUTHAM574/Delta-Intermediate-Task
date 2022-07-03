@@ -31,7 +31,7 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
-                this.acceleration=0.02;
+                this.acceleration=0.002;
                 this.vel = 2;
                 this.info = 's';
                 this.got = 0;
@@ -61,7 +61,7 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
-                this.acceleration=0.02;
+                this.acceleration=0.002;
                 this.vel = 2;
                 this.info = 'h';
                 this.got = 0;
@@ -91,7 +91,7 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
-                this.acceleration=0.02;
+                this.acceleration=0.002;
                 this.vel = 2;
                 this.info = 'n';
 
