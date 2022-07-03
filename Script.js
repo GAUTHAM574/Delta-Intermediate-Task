@@ -31,6 +31,7 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
+                this.acceleration=0.02;
                 this.vel = 2;
                 this.info = 's';
                 this.got = 0;
@@ -44,7 +45,12 @@
 
             update() {
                 this.draw();
+                this.vel+=this.acceleration;
                 this.y -= this.vel;
+                if(this.vel>10)
+                {
+                    this.vel=10;
+                }
             }
         }
 
@@ -55,6 +61,7 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
+                this.acceleration=0.02;
                 this.vel = 2;
                 this.info = 'h';
                 this.got = 0;
@@ -68,7 +75,12 @@
 
             update() {
                 this.draw();
+                this.vel+=this.acceleration;
                 this.y -= this.vel;
+                if(this.vel>10)
+                {
+                    this.vel=10;
+                }
             }
         }
 
@@ -79,6 +91,7 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
+                this.acceleration=0.02;
                 this.vel = 2;
                 this.info = 'n';
 
@@ -91,7 +104,12 @@
 
             update() {
                 this.draw();
+                this.vel+=this.acceleration;
                 this.y -= this.vel;
+                if(this.vel>10)
+                {
+                    this.vel=10;
+                }
             }
         }
 
@@ -157,7 +175,7 @@
                 this.y += this.gravity;
             }
         }
-        player = new Player(Math.random() * (((canvas.width - 20) - 20) + 20), 50, 20, 'yellow');
+        player = new Player(Math.random() * (((canvas.width - 20) - 20) + 20), 50, 25, 'yellow');
 
         //score
         setInterval(function () {
