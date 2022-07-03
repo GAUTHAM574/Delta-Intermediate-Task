@@ -47,9 +47,9 @@
                 this.draw();
                 this.vel+=this.acceleration;
                 this.y -= this.vel;
-                if(this.vel>10)
+                if(this.vel>5)
                 {
-                    this.vel=10;
+                    this.vel=5;
                 }
             }
         }
@@ -77,9 +77,9 @@
                 this.draw();
                 this.vel+=this.acceleration;
                 this.y -= this.vel;
-                if(this.vel>10)
+                if(this.vel>5)
                 {
-                    this.vel=10;
+                    this.vel=5;
                 }
             }
         }
@@ -106,9 +106,9 @@
                 this.draw();
                 this.vel+=this.acceleration;
                 this.y -= this.vel;
-                if(this.vel>10)
+                if(this.vel>5)
                 {
-                    this.vel=10;
+                    this.vel=5;
                 }
             }
         }
